@@ -42,7 +42,7 @@
                 <field name="btn_retour_redaction" invisible="1" />
                 <button name="%(action_is_eig_motif_retour_redaction)d" type="action" string="Rédaction" attrs="{'invisible':[('btn_retour_redaction','!=',True)]}"/>
 
-                <button name="action_non_declarable" type="object" string="Non déclarable" states="redige" confirm2="Voulez-vous vraiment solder cet EIG et le convertir en Incident ?" />
+                <button name="action_non_declarable" type="object" string="Non déclarable" states="redige" confirm="Voulez-vous vraiment solder cet EIG et le convertir en Incident ?" />
 
                 <!-- Etat Validé-->
                 <field name="btn_completer_eig" invisible="1" />
