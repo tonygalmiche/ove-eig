@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+  <data>
+
+
+    <menuitem name="Déclaration" id="menu_declaration"  sequence="10"/>
+    <menuitem name="EIG"         id="menu_eig"          sequence="20" parent="menu_declaration" />
+
+    <menuitem name="Paramétrage"      id="menu_parametrage"        sequence="50" groups="group_is_gestionnaire" />
+    <menuitem name="Paramétrage EIG"  id="menu_parametrage_eig"    sequence="10" groups="group_is_gestionnaire" parent="menu_parametrage" />
+
+    <menuitem name="Fondation OVE"    id="menu_fondation_ove"      sequence="1"  action="base.action_res_company_form"  parent="menu_parametrage_eig"/>
+
+    <menuitem name="Tables"           id="menu_parametrage_tables" sequence="30" parent="menu_parametrage"/>
+
+
+
+    <!-- Déplacer les menus inutiles -->
+    <menuitem id="mail.mail_feeds_main"       sequence="90" name="Messagerie"       parent="base.menu_administration"/>
+    <menuitem id="knowledge.menu_document"    sequence="92" name="Connaissances"    parent="base.menu_administration"/>
+    <menuitem id="portal.portal_menu"         sequence="94" name="Portail"          parent="base.menu_administration"/>
+
+
+
+
+
+
+  </data>
+</openerp>
+

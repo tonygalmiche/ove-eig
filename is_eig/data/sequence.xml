@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="seq_type_eig" model="ir.sequence.type">
+            <field name="name">EIG</field>
+            <field name="code">eig.number</field>
+        </record>
+        <record id="seq_eig" model="ir.sequence">
+            <field name="name">EIG Sequence</field>
+            <field name="code">eig.number</field>
+            <field name="prefix">EIG-</field>
+            <field name="padding">4</field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="seq_type_ei" model="ir.sequence.type">
+            <field name="name">EI</field>
+            <field name="code">ei.number</field>
+        </record>
+        <record id="seq_ei" model="ir.sequence">
+            <field name="name">EI Sequence</field>
+            <field name="code">ei.number</field>
+            <field name="prefix">EI-</field>
+            <field name="padding">4</field>
+        </record>
+    </data>
+</openerp>

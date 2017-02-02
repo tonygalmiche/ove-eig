@@ -1,0 +1,32 @@
+
+.openerp .announcement_bar {
+    display:none;
+}
+
+.navbar-inverse {
+    /*background-color:#B3C612;*/
+    background-color:rgba(179, 198, 18, 0.5);
+    /*opacity: 0.5;*/
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    /*background-color:orange;*/
+    background-color:rgba(179, 198, 18, 0.5);
+    /*opacity: 0.5;*/
+}
+
+
+
+.navbar-inverse .oe_menu_text{
+    color:black;
+}
+
+
+/*
+.active{
+    background-color:orange;
+}
+*/
+
+/*#id="oe_main_menu_placeholder"*/

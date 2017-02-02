@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report 
+            id="is_ei_report"
+            string="Incident"
+            model="is.ei" 
+            report_type="qweb-pdf"
+            file="is_ei.report_is_ei" 
+            name="is_ei.report_is_ei" 
+        />
+    </data>
+</openerp>

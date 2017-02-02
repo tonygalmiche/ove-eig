@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+    
+        <!--  Type Evenement -->
+        <record id="is_eig_type_evenement_1" model="is.type.evenement">
+        	<field name="code">E1</field>
+            <field name="name">mineure relevant de l'ASE</field>
+        </record>
+        
+        <record id="is_eig_type_evenement_2" model="is.type.evenement">
+        	<field name="code">E2</field>
+            <field name="name">maladie</field>
+        </record>
+        
+        <record id="is_eig_type_evenement_3" model="is.type.evenement">
+        	<field name="code">E3</field>
+            <field name="name">atteinte intégrité usagers</field>
+        </record>
+        
+        <record id="is_eig_type_evenement_4" model="is.type.evenement">
+        	<field name="code">E4</field>
+            <field name="name">atteinte sécurité usagers</field>
+        </record>
+        
+        <record id="is_eig_type_evenement_5" model="is.type.evenement">
+        	<field name="code">E5</field>
+            <field name="name">fonctionnement établissement</field>
+        </record>
+           
+
+    </data>
+</openerp>
