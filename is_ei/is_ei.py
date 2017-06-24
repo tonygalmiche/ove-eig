@@ -53,14 +53,22 @@ class is_ei(osv.osv):
     }
     
     def get_signup_url(self, cr, uid, ids, context=None):
-        assert len(ids) == 1
-        document = self.browse(cr, uid, ids[0], context=context)
-        contex_signup = dict(context, signup_valid=True)
-        return self.pool['res.partner']._get_signup_url_for_action(
-            cr, uid, [document.valideur_id.partner_id.id], action='mail.action_mail_redirect',
-            model=self._name, res_id=document.id, context=contex_signup,
-        )[document.valideur_id.partner_id.id]
+        url="https://eig.fondation-ove.fr/web#id="+str(ids[0])+"&view_type=form&model=is.ei"
+        return url
+
+#        assert len(ids) == 1
+#        document = self.browse(cr, uid, ids[0], context=context)
+#        contex_signup = dict(context, signup_valid=True)
+#        return self.pool['res.partner']._get_signup_url_for_action(
+#            cr, uid, [document.valideur_id.partner_id.id], action='mail.action_mail_redirect',
+#            model=self._name, res_id=document.id, context=contex_signup,
+#        )[document.valideur_id.partner_id.id]
     
+
+
+
+
+
     def get_valideur_traiteurs(self, cr, uid, etablissement_id, context=None):
         etablissement_obj = self.pool.get('is.etablissement')
         etablissement = etablissement_obj.browse(cr, uid, etablissement_id, context=context)
